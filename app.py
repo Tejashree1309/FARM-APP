@@ -7,7 +7,7 @@ API_KEY_IS ="API_KEY"
 
 
 st.title("🌾 Farming Assistant (English ↔ Malayalam)")
-st.text(st.secrets['API_KEY']
+st.text(st.secrets['API_KEY'])
 user_question = st.text_input("Ask your farming question:")
 
 def safe_translate(text, source_lang, target_lang):
@@ -59,5 +59,6 @@ if st.button("Get Answer"):
                 st.info("**Malayalam Answer:**\n\n" + answer_ml)
             else:
                 st.caption("Translator unavailable; Malayalam not shown.")
+
 
 

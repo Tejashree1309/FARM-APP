@@ -3,7 +3,7 @@ from openai import OpenAI
 from deep_translator import GoogleTranslator
 
 # 🔑 Paste your NEW OpenAI API key here (keep quotes)
-API_KEY ="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"
+API_KEY ="API_KEY_IS"
 
 # Initialize OpenAI client
 client = OpenAI(api_key=API_KEY)
@@ -61,3 +61,4 @@ if st.button("Get Answer"):
                 st.info("**Malayalam Answer:**\n\n" + answer_ml)
             else:
                 st.caption("Translator unavailable; Malayalam not shown.")
+

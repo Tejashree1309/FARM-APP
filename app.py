@@ -4,6 +4,7 @@ from deep_translator import GoogleTranslator
 
 # 🔑 Paste your NEW OpenAI API key here (keep quotes)
 API_KEY_IS ="API_KEY"
+client = OpenAI(api_key=API_KEY_IS)
 
 
 st.title("🌾 Farming Assistant (English ↔ Malayalam)")
@@ -59,6 +60,7 @@ if st.button("Get Answer"):
                 st.info("**Malayalam Answer:**\n\n" + answer_ml)
             else:
                 st.caption("Translator unavailable; Malayalam not shown.")
+
 
 
 
